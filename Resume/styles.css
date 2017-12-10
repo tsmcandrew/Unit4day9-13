@@ -1,0 +1,27 @@
+nav,
+a {
+  background-color: #3973ac;
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica;
+}
+.vertical-menu {
+    width: 100px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}

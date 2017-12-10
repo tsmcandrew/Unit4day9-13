@@ -5,14 +5,25 @@ body {
 
 .navigation {
   font-family: 'Josefin', sans-serif;
+  margin: 10px 10px;
+  padding: 0;
+  border: 3px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-align: center;
+  color: hsl(136, 23%, 50%);
 }
-
-.navigation ul {
+/*
+.navigation a {
   margin: 10px;
   padding: 0;
+  border: 3px;
+  font-weight: 100;
+  letter-spacing: 3px;
   text-align: center;
 }
-
+/*
+/*
 .navigation li {
   list-style-type: none;
   border: 0;
@@ -21,6 +32,7 @@ body {
   padding: 10px;
 }
 /*
+/*
 .navigation  li.logo {
   color: black;
   font-size: 18px;
@@ -28,7 +40,7 @@ body {
   letter-spacing: 4px;
 }
 */
-
+/*
 .navigation  li.contact {
   color: hsl(136, 23%, 80%);
   font-size: 18px;
@@ -41,19 +53,20 @@ body {
   display: inline-block;
   text-decoration: none;
 }
-
+*/
 
 #banner {
-  background-image: url("glacier.jpg");
+  background-image: url("../images/percywarner.jpg");
   background-size: cover;
   background-position: bottom center;
   height: 700px;
+  opacity: .6;
   width: 100%;
 }
 
 #banner .content h1 {
   font-family: 'Raleway', sans-serif;
-  border: 1px solid white;
+  border: 2px solid hsl(206, 100%, 21%);
   position: relative;
   top: 260px;
   width: 340px;
@@ -63,7 +76,7 @@ body {
 
 #main {
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   width: cover;
   height: 1000px;
@@ -71,9 +84,11 @@ body {
 }
 
 h1 {
-  color: hsl(136, 23%, 80%);
+  color: hsl(206, 100%, 21%);
+  background-color: white;
+  opacity: .6;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -91,7 +106,7 @@ h3 {
   color: hsl(203, 51%, 45%);
   font-size: 26px;
   font-weight: 700;
-  padding: 20px 10px;
+  padding: 20px 5px;
 }
 
 p {

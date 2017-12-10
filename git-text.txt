@@ -1,0 +1,93 @@
+BASIC GIT WORKFLOW
+Generalizations
+Congratulations! You have now been introduced to the fundamental Git workflow. You learned a lot! Let's take a moment to generalize:
+
+Git is the industry-standard version control system for web developers.
+
+Use Git commands to help keep track of changes made to a project:
+git init creates a new Git repository.
+git status inspects the contents of the working directory and staging area.
+git add <filename> adds files from the working directory to the staging area.
+git add . adds all files from the working directory to the staging area.
+git commit -m <message> permanently stores file changes from the staging area in the repository.
+GitHub is a service for hosting remote repositories on the web.
+
+git remote add origin <url> specifies the remote repository using Git
+git push -u origin master pushes the changes to the master branch on the remote repository, linking the local repository to the remote repository.
+git push origin master pushes the changes to the master branch on the remote repository, given that the local repository and the remote repository are already linked.
+
+FLEXBOX
+Review: Flexbox
+You should be proud of yourself! You have learned the most important properties of flexbox. Flexbox is an art and a science; you can use it to make laying out multiple elements a piece of cake. You know everything necessary to begin using it in your own projects.
+
+display: flex changes an element to a block-level container with flex items inside of it.
+display: inline-flex allows multiple flex containers to appear inline with each other.
+justify-content is used to space items along the major axis.
+align-items is used to space items along the cross axis.
+flex-grow is used to specify how much space (and in what proportions) flex items absorb along the major axis.
+flex-shrink is used to specify how much flex items shrink and in what proportions along the major axis.
+flex-basis is used to specify the initial size of an element styled with flex-grow and/or flex-shrink.
+flex is used to specify flex-grow, flex-shrink, and flex-basis in one declaration.
+flex-wrap specifies that elements should shift along the cross axis if the flex container is not large enough.
+align-content is used to space rows along the cross axis.
+flex-direction is used to specify the major and cross axes.
+flex-flow is used to specify flex-wrap and flex-direction in one declaration.
+Flex containers can be nested inside of each other by declaring display: flex or display: inline-flex for children of flex containers.
+Let’s apply a few of the properties you’ve learned to arrange one section of the web page in the browser to the right!
+
+Article
+The Box Model in DevTools
+Reading Time: About 4 minutes
+Mark Complete
+INTRODUCTION
+
+All HTML elements are boxes made up of four components: a content container, padding, border, and margin. In our Box Model Lesson we introduce these four properties and use them to position elements on a website. If you have not taken this lesson, we recommend you do so now, before continuing.
+
+In this article, we will introduce how Google Chrome's DevTools can be used to view the box around each element on a web page.
+
+1. VIEW BOX MODEL DIMENSIONS WITH DEVTOOLS
+
+You can use Google Chrome's DevTools to view the box around every element on a web page. To do this, click View > Developer > Developer Tools and navigate to the Elements tab.
+
+Elements Tab
+
+In this tab you can view all of the elements on the current page. From this view, you can select the element of interest, which will open a new column on the right side of DevTools. Select the tab labeled Computed on the top of the rightmost column.
+
+Computed Tab
+
+The selected element's box should appear at the top of the pane. Hovering over each property of the box will cause the property to be highlighted in the web page.
+
+If you know the element you want to inspect, going through all of the steps listed above is unnecessary. Instead, you can right click the element you want to observe and select the Inspect button. This will display DevTools on the right side of the browser with the element selected in the Elements tab. To view the element's box, you can select the Computed tab.
+
+Exercise I: View a Website's Box Model Dimensions
+
+Complete the following steps within the current web browser view.
+
+In a new tab navigate to the Codecademy Wikipedia page.
+Right click (or Ctrl and click simultaneously) the Contents navigation box displayed in the image below:
+Dropdown image
+
+Select Inspect.
+Select the Computed tab at the top of the rightmost column.
+Hover over the different properties of the logo's box. The corresponding space on the web page should be highlighted when you do this.
+2. MODIFY BOX DIMENSIONS
+
+Now that you know how to view the box of an element we'll modify the box's values with DevTools.
+
+To modify the values of the box double click the property value, assign it a new number, and press enter. You can also adjust the value incrementally by double clicking the value and using the up or down arrow keys.
+
+Selecting Values
+
+In the image above, the border on each side is set to 1 and the padding is set to 7. These values can be changed by double clicking the values in the box and assigning them new numbers, or using the up or down arrow keys on your keyboard.
+
+Note: If you inspect an element and find that the border is set to -, adding a numerical value will not make a border appear. The border color, style, and width must be set in the CSS document in order to see the border.
+
+Exercise II: Modify a Website's Box Model Dimensions
+
+Pick up where you left off in Exercise 1.
+
+Double click the top padding of the element.
+Use the up and down arrows to adjust the element's padding. Observe how the appearance changes on the web page.
+Change the left margin to 200. Observe how the element's appearance changes.
+Remember the changes you make in DevTools are not saved. If you are using DevTools to make adjustments to a personal project, make sure to adjust values in the HTML and CSS documents.
+Mark Complete
